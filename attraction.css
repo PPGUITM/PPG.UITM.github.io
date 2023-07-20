@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Century;
+}
+ul {
+   float: right;
+   list-style-type: none;
+   margin-top: 30px;
+   min-height: 0px;
+   margin-right: 40px;
+   font-size: 16px;
+}
+
+ul li{
+   display: inline-block;
+}
+
+ul li a{
+   text-decoration: none;
+   color:#ffffff;
+   padding: 5px 20px;
+   border: 1px solid transparent;
+   transition: 0.5 ease;
+}
+
+ul li a:hover{
+   background-color: #bcab9a;
+   color: #fffefe;
+}
+
+ul li.active a{
+   background-color: #bcab9a;
+   color: #ffffff;
+}
+
+.logo img{
+   float: left;
+   width: 80px;
+   height: auto;
+}
+
+.main{
+   max-width: 1200px;
+   margin: auto;
+}
+
+.sub-menu{
+   display: none;
+   top: 6%;
+   position: relative;
+}
+
+.sub-menu ul{
+   position: absolute;
+}
+
+.main ul li:hover .sub-menu{
+   display: block;
+   position: absolute;
+   background-color: #ffffff;
+   margin-top: 12px;
+   margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu ul{
+   display: block;
+   margin: 6px;
+}
+
+.main ul li:hover .sub-menu ul li {
+   width: 75px;
+   padding: 5px;
+   border-bottom: 1px #ffffff;
+   background: transparent;
+   transition: 0.4 ease;
+   text-align: left;
+   border-radius: 0px;
+}
+
+
+ body{
+    background:#8a786d;
+    min-height: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .card-container{
+    display: flex;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+ }
+
+ .card{
+    position: relative;
+    background: #dbcdbc;
+    width:  350px;
+    box-shadow: 0 5px 25px #745f4b;
+    border-radius: 10px;
+    overflow: hidden;
+ }
+
+ .card .card-img{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .card .card-img img{
+    width: 102%;
+    height: 102%;
+ }
+
+ .card-content{
+    position: relative;
+    text-align: center;
+    margin: 15px;
+ }
+
+ .card-content .text{
+    position: relative;
+    font-size: 1em;
+    text-align: left;
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+ }
+
+ .card-content .text:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #dbcdbc, transparent);
+    display: none;
+ }
+
+ .card.gradient .card-content .text:before{
+    display: block;
+ } 
+
+
+ .card-content .see-more-btn{
+    font: 0.85em;
+    color: #676464;
+    user-select: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+ }
+
+ .card-content .see-more-btn:hover{
+    color: #000000;
+ }
+
+ button{
+   width: 100px;
+   color: #ffffff;
+   font-size: 12px;
+   padding: 12px 0;
+   background: #796557;
+   border: 0;
+   border-radius: 20px;
+   outline: none;
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 700px;
+   right: 30px;
+   height: 40px;
+}
+
+.hero-btn{
+   background: #614f45 ;
+   color: #201f1e;
+   text-decoration: none;
+   border: 2px solid transparent;
+   font-weight: bold;
+   padding: 13px 30px;
+   border-radius: 30px;
+   transition: .4s;
+   position: absolute;
+   bottom: 5px;
+   right:1100px;
+}
+.hero-btn:hover{
+   background: transparent;
+   border: 2px solid #614f45 ;
+   cursor: pointer;
+}

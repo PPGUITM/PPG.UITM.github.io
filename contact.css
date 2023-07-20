@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.main-content {
+    margin-top: 0px;
+    height: 100vh;
+    background-color: #8a786d;
+    background-position: center;
+    background-size:cover;
+    max-width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content h1 {
+    text-align: center;
+    padding: 20px;
+    color: #201f1e;
+}
+.main-content p {
+    text-align: justify;
+    padding: 15px;
+    color: #201f1e;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main-content b {
+    text-align: justify;
+    justify-content: left;
+    padding: 15px;
+    color: #201f1e;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main-content a {
+    text-align: left;
+    padding: 15px;
+    color: #201f1e;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cards {
+    background-color: #ebeae5;
+    border: 10px solid #614f45;
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 1000px;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border-radius: 30px;
+    width: 100%;
+    color: white;
+}
+
+table, td, th {
+    border: 1px solid;
+}
+
+tr {
+    text-align: center;
+}
+
+th, td {
+    padding: 5px 3px;
+}
+
+th {
+    background:  #AE6E4E ;
+    color: black;
+    text-transform: uppercase;   
+}
+
+td {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+tr:nth-child(odd) {
+    background: #B99976;
+}
+
+tr:nth-child(even) {
+    background: #CC9767;
+}
+
+.box {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-btn{
+    background: #614f45 ;
+    color: #201f1e;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    position: absolute;
+    bottom: 5px;
+    right:1220px;
+}
+.hero-btn:hover{
+    background: transparent;
+    border: 2px solid #614f45 ;
+    cursor: pointer;
+}
+
+
+
+
